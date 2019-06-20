@@ -47,10 +47,20 @@
     margin-top: 50px;
 }
 .o-footer__content {
+    color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 200px 20px;
+}
+
+.o-footer__col {
+    padding: 30px 20px 60px;
+    width: 33.333333%;
+}
+
+.o-footer__icon {
+    display: inline-block;
+    padding: 10px 15px 0 0;
 }

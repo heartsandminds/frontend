@@ -40,9 +40,26 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  color:darkred;
+}
+
 a:focus, button:focus {
   outline: 3px dashed $color-primary; 
   outline-offset: 2px;
+}
+
+label {
+  margin: 8px 0;
+  display: block;
+}
+
+input {
+  font-size: 16px;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: none;
 }
 
 h1 {

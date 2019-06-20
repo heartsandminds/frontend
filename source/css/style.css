@@ -73,9 +73,23 @@ a {
 a:hover {
   text-decoration: none; }
 
+a:focus {
+  color: darkred; }
+
 a:focus, button:focus {
   outline: 3px dashed #da3832;
   outline-offset: 2px; }
+
+label {
+  margin: 8px 0;
+  display: block; }
+
+input {
+  font-size: 16px;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: none; }
 
 h1 {
   font-family: 'OpenSans-Bold', sans-serif;
@@ -138,7 +152,7 @@ ul, ol {
   text-decoration: underline; }
 
 .m-button:focus {
-  outline-color: #575757;
+  background: darkred;
   outline-offset: 3px; }
 
 .m-button--lg {
@@ -169,6 +183,27 @@ ul, ol {
     justify-content: center; }
   .m-navigation--footer .m-navigation__list-item a {
     color: #ffffff; }
+
+.m-footer-navigation {
+  align-self: center;
+  background: #282828;
+  margin-left: auto; }
+
+.m-footer-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; }
+
+.m-footer-navigation__list-item {
+  padding: 2px 20px; }
+  .m-footer-navigation__list-item a {
+    color: #ffffff;
+    text-decoration: underline; }
+    .m-footer-navigation__list-item a:hover {
+      text-decoration: none; }
 
 .m-card {
   box-shadow: 0 5px 15px rgba(176, 176, 176, 0.5);
@@ -227,12 +262,20 @@ ul, ol {
   margin-top: 50px; }
 
 .o-footer__content {
+  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 200px 20px; }
+  margin: 0 auto; }
+
+.o-footer__col {
+  padding: 30px 20px 60px;
+  width: 33.333333%; }
+
+.o-footer__icon {
+  display: inline-block;
+  padding: 10px 15px 0 0; }
 
 .t-full-width {
   max-width: 1440px;

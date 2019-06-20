@@ -19,7 +19,7 @@
 }
 
 .m-button:focus {
-    outline-color: $color-secondary;
+    background:darkred;
     outline-offset: 3px;   
 }
 
@@ -61,6 +61,33 @@
 
     .m-navigation__list-item a {
         color: #ffffff;
+    }
+}
+
+// FooterNavigation
+.m-footer-navigation {
+    align-self: center;
+    background: #282828;
+    margin-left: auto;
+}
+.m-footer-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.m-footer-navigation__list-item {
+    padding: 2px 20px;
+
+    a {
+        color: #ffffff;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
