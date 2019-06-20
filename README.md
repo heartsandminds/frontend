@@ -95,7 +95,7 @@ Hearts and Minds User Interface currently supports the following browsers:
 ## Developing this project
 
 ```bash
-git clone https://github.com/danielelder/heartsandminds.git
+git clone https://github.com/heartsandminds/frontend.git
 cd heartsandminds
 npm install
 npm run pl:serve

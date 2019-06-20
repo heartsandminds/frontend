@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielelder/heartsandminds.git"
+    "url": "git+https://github.com/heartsandminds/frontend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danielelder/heartsandminds/issues"
+    "url": "https://github.com/heartsandminds/frontend/issues"
   },
-  "homepage": "https://github.com/danielelder/heartsandminds#readme",
+  "homepage": "https://github.com/heartsandminds/frontend#readme",
   "dependencies": {
     "@pattern-lab/cli": "0.0.3",
     "@pattern-lab/core": "^3.0.1",
