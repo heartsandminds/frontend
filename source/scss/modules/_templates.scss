@@ -4,6 +4,38 @@
     padding: 20px;
 }
 
-.t-3-col {
+.t-left-content {
+    max-width: 840px;
+}
+
+.t-right-content {
+    max-width: 600px;
+}
+
+.t-3-col-flex {
     display: flex;
+}
+
+.t-row-grid {
+    overflow: hidden;
+}
+
+.t-3-col-grid {
+    width: 33.333333%;
+    float: left;
+}
+
+.t-4-col-grid {
+    width: 25%;
+    float: left;
+}
+
+@media (max-width: 768px) {
+    .t-3-col-grid {
+        width: 50%;
+    }
+    
+    .t-4-col-grid {
+        width: 50%;
+    }
 }

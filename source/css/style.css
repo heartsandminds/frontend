@@ -66,6 +66,23 @@ html {
 body {
   font-size: 1rem; }
 
+h1 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 3.125rem;
+  font-weight: bold; }
+
+h2 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+h3 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 1.875rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0; }
+
 a {
   color: #DA3832;
   text-decoration: underline; }
@@ -80,6 +97,9 @@ a:focus, button:focus {
   outline: 3px dashed #da3832;
   outline-offset: 2px; }
 
+p {
+  padding-bottom: 20px; }
+
 label {
   margin: 8px 0;
   display: block; }
@@ -91,26 +111,11 @@ input {
   border-radius: 6px;
   border: none; }
 
-h1 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-size: 3.125rem;
-  font-weight: bold; }
-
-h2 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold; }
-
-h3 {
-  color: #da3832;
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-size: 1.875rem; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0; }
+img {
+  max-width: 100%; }
 
 ul, ol {
-  padding: 0 0 0 20px; }
+  padding: 0 0 20px 25px; }
 
 .a-icon {
   width: 0.8em;
@@ -218,8 +223,20 @@ ul, ol {
     padding: 18px 20px; }
     .m-card .m-card__text > * {
       margin-top: 0; }
+  .m-card .m-card__heading {
+    color: #da3832; }
   .m-card .m-card__link {
     margin: auto 15px 20px; }
+
+.m-team-member {
+  text-align: center;
+  padding: 20px; }
+
+.m-team-member__image img {
+  border: 4px solid #da3832;
+  border-radius: 50%;
+  width: 150px;
+  margin: 10px auto; }
 
 .o-header {
   border-bottom: 1px solid #F2F2F2;
@@ -277,13 +294,42 @@ ul, ol {
   display: inline-block;
   padding: 10px 15px 0 0; }
 
+.o-footer__input {
+  width: 80%; }
+
+.o-footer__input:focus {
+  outline: 3px solid #da3832; }
+
 .t-full-width {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px; }
 
-.t-3-col {
+.t-left-content {
+  max-width: 840px; }
+
+.t-right-content {
+  max-width: 600px; }
+
+.t-3-col-flex {
   display: flex; }
+
+.t-row-grid {
+  overflow: hidden; }
+
+.t-3-col-grid {
+  width: 33.333333%;
+  float: left; }
+
+.t-4-col-grid {
+  width: 25%;
+  float: left; }
+
+@media (max-width: 768px) {
+  .t-3-col-grid {
+    width: 50%; }
+  .t-4-col-grid {
+    width: 50%; } }
 
 .u-h1, .u-h2, .u-h3, .u-subtitle {
   margin: 0 0 1em 0; }

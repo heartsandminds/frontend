@@ -31,6 +31,27 @@ body {
   font-size: 1rem;
 }
 
+h1 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+h2 {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 1.875rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+}
+
 a {
   color: #DA3832;
   text-decoration: underline;
@@ -49,6 +70,10 @@ a:focus, button:focus {
   outline-offset: 2px;
 }
 
+p {
+  padding-bottom: 20px;
+}
+
 label {
   margin: 8px 0;
   display: block;
@@ -62,28 +87,10 @@ input {
   border: none;
 }
 
-h1 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-size: 3.125rem;
-  font-weight: bold;
-}
-
-h2 {
-    font-family: 'OpenSans-Bold', sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-h3 {
-  color: $color-primary;
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-size: 1.875rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0;
+img {
+  max-width: 100%;
 }
 
 ul, ol {
-    padding: 0 0 0 20px;
+    padding: 0 0 20px 25px;
 }
