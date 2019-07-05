@@ -103,8 +103,11 @@ npm run pl:serve
 
 ### Build and Test
 
-| Command              | Description                                         |
-|----------------------|-----------------------------------------------------|
-| `npm run serve`      | Builds the Pattern Lab site and watches for changes |
-| `npm run pl:help`    | Displays the Pattern Lab help                       |
-| `npm run pl:version` | Displays the installed version of Pattern Lab       |
+| Command              | Description                                             |
+|----------------------|---------------------------------------------------------|
+| `npm run serve`      | Builds the Pattern Lab site and watches for changes     |
+| `npm run build`      | Builds the Pattern Lab styleguide into the /docs folder |
+| `npm run pl:help`    | Displays the Pattern Lab help                           |
+| `npm run pl:version` | Displays the installed version of Pattern Lab           |
+
+Update patternlab-viewer.js line for github hosting --> __webpack_require__.p = "/frontend/styleguide/";
