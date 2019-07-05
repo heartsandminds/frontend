@@ -4,6 +4,7 @@
   "description": "Hearts and Minds component library",
   "main": "index.js",
   "scripts": {
+    "build": "npm run pl:scss && npm run pl:build",
     "serve": "npm run pl:scss && npm-run-all --parallel pl:serve:scss pl:serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pl:build": "patternlab build --config ./patternlab-config.json",
