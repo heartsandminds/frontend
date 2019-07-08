@@ -10,7 +10,13 @@
     flex-direction: row;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+}
+
+@media screen and (min-width:500px) {
+    .o-header__content {
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width:800px) {
@@ -32,7 +38,7 @@
     flex-wrap: wrap; 
     margin: 0 auto;
     max-width: 940px;
-    padding: 20px;
+    padding: 20px 0 ;
 }
 .o-donate__text {
     flex: 999 1 auto;  
@@ -63,7 +69,7 @@
 }
 
 .o-footer__col {
-    padding: 30px 20px 60px;
+    padding: 15px 10px 30px;
     width: 100%
 }
 
@@ -88,7 +94,14 @@
     outline: 3px solid $color-primary;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+    .o-footer__col {
+        padding: 30px 20px 60px;
+        width:  50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
     .o-footer__col {
         width:  33.333333%;
     }

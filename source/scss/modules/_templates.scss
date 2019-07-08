@@ -1,7 +1,13 @@
 .t-full-width {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+}
+
+@media screen and (min-width:500px) {
+    .t-full-width {
+        padding: 20px;
+    }
 }
 
 .t-left-content {
