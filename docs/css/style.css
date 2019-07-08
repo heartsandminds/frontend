@@ -40,6 +40,9 @@ hgroup,
 figure {
   display: block; }
 
+[hidden] {
+  display: none !important; }
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url("../fonts/OpenSans-Regular.woff") format("woff");
@@ -93,7 +96,12 @@ a:hover {
 a:focus {
   color: darkred; }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
+  outline: none; }
+
+.keypress a:focus,
+.keypress button:focus {
   outline: 3px dashed #da3832;
   outline-offset: 2px; }
 
@@ -139,6 +147,91 @@ ul, ol {
 .a-menu-link:hover {
   border-bottom: 4px solid #DA3832; }
 
+.m-logo-link {
+  max-width: 280px;
+  padding-right: 10px; }
+  .m-logo-link:focus {
+    outline-offset: 6px; }
+
+@media screen and (min-width: 480px) {
+  .m-logo-link {
+    max-width: 300px; } }
+
+@media screen and (min-width: 800px) {
+  .m-logo-link {
+    max-width: none; } }
+
+.m-navigation {
+  align-self: center;
+  margin-left: auto;
+  padding-top: 20px;
+  width: 100%; }
+
+.m-navigation__menu-button {
+  display: none;
+  border: none;
+  border-top: 3px solid #da3832;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+  min-height: 55px;
+  padding: 10px 0 2px;
+  position: relative; }
+  .m-navigation__menu-button:before {
+    border-top: 3px solid #da3832;
+    border-bottom: 3px solid #da3832;
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+.m-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0; }
+
+.m-navigation__list-item {
+  padding: 10px 15px;
+  width: 100%; }
+  .m-navigation__list-item .m-button {
+    margin-top: -5px; }
+
+.js .m-navigation {
+  width: auto; }
+
+.js .m-navigation__menu-button {
+  display: block; }
+
+.m-navigation--footer {
+  background: #282828; }
+  .m-navigation--footer .m-navigation__list {
+    display: flex;
+    justify-content: center; }
+  .m-navigation--footer .m-navigation__list-item a {
+    color: #ffffff; }
+
+@media screen and (min-width: 800px) {
+  .m-navigation__list-item {
+    width: auto; } }
+
+@media screen and (min-width: 1200px) {
+  .m-navigation {
+    padding-top: 0;
+    width: auto; }
+  .js .m-navigation__menu-button {
+    display: none; }
+  .js .m-navigation__list {
+    display: flex; } }
+
 .m-button {
   align-self: center;
   background: #DA3832;
@@ -151,6 +244,8 @@ ul, ol {
   margin: 0;
   padding: 10px 15px;
   text-decoration: none; }
+  .m-button a {
+    color: #ffffff; }
 
 .m-button:hover {
   background: darkred;
@@ -164,30 +259,6 @@ ul, ol {
   border-radius: 12px;
   padding: 16px 20px 16px 15px;
   font-size: 1.2rem; }
-
-.m-logo-link:focus {
-  outline-offset: 6px; }
-
-.m-navigation {
-  align-self: center;
-  margin-left: auto; }
-
-.m-navigation__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px; }
-
-.m-navigation__list-item {
-  padding: 2px 20px; }
-
-.m-navigation--footer {
-  background: #282828; }
-  .m-navigation--footer .m-navigation__list {
-    justify-content: center; }
-  .m-navigation--footer .m-navigation__list-item a {
-    color: #ffffff; }
 
 .m-footer-navigation {
   align-self: center;
@@ -240,15 +311,20 @@ ul, ol {
 
 .o-header {
   border-bottom: 1px solid #F2F2F2;
-  padding: 1em 0; }
+  padding: 0; }
 
 .o-header__content {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px; }
+
+@media screen and (min-width: 800px) {
+  .o-header {
+    padding: 1em 0; } }
 
 .o-cards {
   display: flex;
@@ -288,17 +364,25 @@ ul, ol {
 
 .o-footer__col {
   padding: 30px 20px 60px;
-  width: 33.333333%; }
+  width: 100%; }
 
 .o-footer__icon {
   display: inline-block;
   padding: 10px 15px 0 0; }
+  .o-footer__icon a {
+    color: #ffffff; }
+  .o-footer__icon a:hover {
+    color: #da3832; }
 
 .o-footer__input {
   width: 80%; }
 
 .o-footer__input:focus {
   outline: 3px solid #da3832; }
+
+@media screen and (min-width: 768px) {
+  .o-footer__col {
+    width: 33.333333%; } }
 
 .t-full-width {
   max-width: 1440px;

@@ -65,7 +65,13 @@ a:focus {
   color:darkred;
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
+  outline: none; 
+}
+
+.keypress a:focus,
+.keypress button:focus {
   outline: 3px dashed $color-primary; 
   outline-offset: 2px;
 }
