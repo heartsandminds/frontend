@@ -1,0 +1,26 @@
+// Logo link
+.m-logo-link {
+    max-width: 250px;
+    padding-right: 10px;
+    &:focus {
+        outline-offset: 6px;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .m-logo-link {
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .m-logo-link {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .m-logo-link {
+        max-width: none;
+    }
+}

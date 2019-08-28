@@ -1,9 +1,9 @@
 // Setup hamburger menu
-var hamburger = document.querySelector('.m-navigation__menu-button');
+var hamburger = document.querySelector('.m-global-navigation__menu-button');
 var expanded = window.matchMedia('(min-width:1200px)').matches;
 hamburger.setAttribute('aria-expanded', expanded);
 var menu = hamburger.nextElementSibling;
-menu.hidden = true;
+menu.hidden = !expanded;
 hamburger.addEventListener("click", function() {
     expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
     hamburger.setAttribute('aria-expanded', !expanded);

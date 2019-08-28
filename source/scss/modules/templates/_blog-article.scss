@@ -1,0 +1,15 @@
+// Blog article
+.t-blog-article-content,
+.t-blog-article-latest {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .t-blog-article-content {
+        width: 60%;
+    }
+    
+    .t-blog-article-latest {
+        width: 40%;
+    }
+}

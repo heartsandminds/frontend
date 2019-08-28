@@ -1,0 +1,27 @@
+// Card
+.m-card {
+    box-shadow: 0 5px 15px rgba(176, 176, 176, .50);
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-basis: calc((60rem - 100%) * 999);
+    flex-direction: column;
+    margin: 25px;
+    overflow: hidden;
+
+    .m-card__text {
+        padding: 18px 20px;
+
+        > * {
+            margin-top: 0;
+        }
+    }
+
+    .m-card__heading {
+        color: $color-primary;
+    }
+
+    .m-card__link {
+        margin: auto 15px 20px;
+    }
+}
