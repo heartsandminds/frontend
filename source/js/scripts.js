@@ -25,6 +25,6 @@ document.addEventListener("keydown", function() {
     document.body.classList.add('keypress');
 });
 
-// Enable javascript functionality
+// Set javascript enabled
 document.body.classList.add("js");
 console.log("Javascipt enabled");
