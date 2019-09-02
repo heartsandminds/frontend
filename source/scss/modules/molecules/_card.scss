@@ -7,6 +7,7 @@
     flex-basis: calc((60rem - 100%) * 999);
     flex-direction: column;
     margin: 25px;
+    min-width: 25%;
     overflow: hidden;
 
     .m-card__text {
