@@ -3,11 +3,9 @@
     box-shadow: 0 5px 15px rgba(176, 176, 176, .50);
     border-radius: 10px;
     display: flex;
-    flex: 1;
-    flex-basis: calc((60rem - 100%) * 999);
     flex-direction: column;
     margin: 25px;
-    min-width: 25%;
+    width: 100%;
     overflow: hidden;
 
     .m-card__text {
@@ -24,5 +22,17 @@
 
     .m-card__link {
         margin: auto 15px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .m-card {
+        width: calc(50% - 50px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .m-card {
+        width: calc(33.3333% - 50px);
     }
 }
