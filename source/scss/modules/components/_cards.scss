@@ -1,0 +1,44 @@
+// Cards
+.c-cards {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -25px;
+}
+
+.c-card {
+    box-shadow: 0 5px 15px rgba(176, 176, 176, .50);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 100%;
+    overflow: hidden;
+
+    .c-card__text {
+        padding: 18px 20px;
+
+        > * {
+            margin-top: 0;
+        }
+    }
+
+    .c-card__heading {
+        color: $color-primary;
+    }
+
+    .c-card__link {
+        margin: auto 15px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .c-card {
+        width: calc(50% - 50px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .c-card {
+        width: calc(33.3333% - 50px);
+    }
+}

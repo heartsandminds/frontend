@@ -1,0 +1,40 @@
+// FooterNavigation
+.c-footer-navigation {
+    align-self: center;
+    background: #282828;
+    margin-left: auto;
+}
+
+.c-footer-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+
+    .c-global-navigation__list-item {
+        padding: 2px 20px 2px 5px;
+    
+        &:not(:last-child):after {
+            content: '';
+            border-right: 1px solid white;
+            padding-right: 10px;
+        }
+    
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+    
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .c-global-navigation__list-item:not(:last-child):after {
+        content: '';
+        border-right: 1px solid white;
+        padding-right: 20px;
+    }
+}

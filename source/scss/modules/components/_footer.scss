@@ -1,0 +1,52 @@
+// Footer
+.c-footer {
+    background: #424242;
+    margin-top: 50px;
+}
+.c-footer__content {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.c-footer__col {
+    padding: 15px 10px 30px;
+    width: 100%
+}
+
+.c-footer__icon {
+    display: inline-block;
+    padding: 10px 15px 0 0;
+
+    a {
+        color: #ffffff;
+    }
+
+    a:hover {
+        color: $color-primary;
+    }
+}
+
+.c-footer__input {
+    width: 80%;
+}
+
+.c-footer__input:focus {
+    outline: 3px solid $color-primary;
+}
+
+@media screen and (min-width: 500px) {
+    .c-footer__col {
+        padding: 30px 20px 60px;
+        width:  50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .c-footer__col {
+        width:  33.333333%;
+    }
+}

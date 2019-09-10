@@ -1,0 +1,57 @@
+// Blog hero
+.c-hero-blog {
+    background: $color-primary;
+    color: $color-tertiary;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 0 80px;
+}
+
+.c-hero-blog__content {
+    margin-right: 0;
+}
+
+.c-hero-blog__title {
+    font-size: 1.6rem;
+    margin: 0 0 10px;
+}
+
+.c-hero-blog__meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    svg {
+        height: 1em;
+        margin-right: 5px;
+        width: 1em;
+    }
+}
+
+.c-hero-blog__date {
+    align-items: center;
+    display: flex;
+    margin: 0 40px 10px 0;
+}
+
+.c-hero-blog__author {
+    align-items: center;
+    display: flex;
+    margin: 0 0 10px;
+}
+
+.c-hero-blog__image {
+    margin: 10px 0 -100px;
+}
+
+@media (min-width: 900px) {
+    .c-hero-blog__content {
+        margin-right: 20px;
+        width: 40%;
+    }
+    .c-hero-blog__image {
+        max-width: 50%;
+        margin-left: auto;
+        min-width: 475px;
+    }
+}

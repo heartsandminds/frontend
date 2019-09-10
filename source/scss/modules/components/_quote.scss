@@ -1,0 +1,42 @@
+.c-quote {
+    background: #eeeeee;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 80%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: #eeeeee;
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: -10px;
+        margin-bottom: -20px;
+    }
+}
+
+.c-quote__text {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+
+    &:after {
+        content: '';
+        border-bottom: 3px solid $color-primary;
+        bottom: -10px;
+        left: 0;
+        margin-bottom: 10px;
+        position: absolute;
+        width: 20px;
+    }
+}
+
+.c-quote__source {
+    padding-bottom: 0;
+}

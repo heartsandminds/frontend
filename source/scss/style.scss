@@ -13,20 +13,18 @@
         "modules/atoms/links",
         "modules/atoms/logo";
 
-// MOLECULES
-@import "modules/molecules/card",
-        "modules/molecules/footer-navigation",
-        "modules/molecules/global-navigation",
-        "modules/molecules/logo-link",
-        "modules/molecules/skip-links",
-        "modules/molecules/team-member";
-
-// ORGANISMS
-@import "modules/organisms/blog-hero",
-        "modules/organisms/cards",
-        "modules/organisms/donate",
-        "modules/organisms/footer",
-        "modules/organisms/header";
+// COMPONENTS
+@import "modules/components/cards",
+        "modules/components/footer-navigation",
+        "modules/components/global-navigation",
+        "modules/components/quote",
+        "modules/components/logo-link",
+        "modules/components/skip-links",
+        "modules/components/team-members",
+        "modules/components/hero-blog",
+        "modules/components/donate",
+        "modules/components/footer",
+        "modules/components/header";
 
 // TEMPLATES
 @import "modules/templates/blog-article",

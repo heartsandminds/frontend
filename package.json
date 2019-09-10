@@ -13,7 +13,7 @@
     "pl:serve": "patternlab serve --config ./patternlab-config.json",
     "pl:serve:scss": "node-sass source/scss/style.scss source/css/style.css --watch",
     "pl:version": "patternlab --version",
-    "pl:scss": "node-sass source/scss/style.scss source/css/style.css"
+    "pl:scss": "node-sass source/scss/style.scss source/css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",

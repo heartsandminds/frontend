@@ -1,0 +1,26 @@
+// Header
+.c-header {
+    border-bottom: 1px solid #F2F2F2;
+    padding: 0;
+}
+.c-header__content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media screen and (min-width:500px) {
+    .c-header__content {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .c-header {
+        padding: 1em 0;
+    }
+}

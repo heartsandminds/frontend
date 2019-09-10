@@ -46,8 +46,8 @@ Learn more about [BEM](http://getbem.com/).
 | Property  | Class prefix |
 |-----------|--------------|
 | Atoms     | a-           |
-| Molecules | m-           | 
-| Organisms | o-           |
+| Molecules | c-           | 
+| Organisms | c-           |
 | Templates | t-           |
 | Utilities | u-           |
 
@@ -57,11 +57,11 @@ Example classes using ABEM (Atomic Design and BEM):
 .a-block__element {}
 .a-block__element--modifier {}
 
-.m-block__element {}
-.m-block__element--modifier {}
+.c-block__element {}
+.c-block__element--modifier {}
 
-.o-block {}
-.o-block--modifier {}
+.c-block {}
+.c-block--modifier {}
 
 .u-align-center {}
 ```
