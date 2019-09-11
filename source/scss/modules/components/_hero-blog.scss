@@ -1,11 +1,16 @@
 // Blog hero
-.c-hero-blog {
+.c-hero-blog-wrapper {
     background: $color-primary;
     color: $color-tertiary;
+    margin: 0 0 80px;
+}
+
+.c-hero-blog {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    margin: 0 0 80px;
+    padding: 20px 20px 40px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .c-hero-blog__content {
@@ -13,7 +18,7 @@
 }
 
 .c-hero-blog__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 0 0 10px;
 }
 
@@ -45,6 +50,9 @@
 }
 
 @media (min-width: 900px) {
+    .c-hero-blog {
+        padding: 20px;
+    }
     .c-hero-blog__content {
         margin-right: 20px;
         width: 40%;
