@@ -1,15 +1,24 @@
 // Blog article
+.t-blog-article {
+    display: block;
+}
+
 .t-blog-article-content,
 .t-blog-article-latest {
     width: 100%;
 }
 
 @media screen and (min-width:768px) {
+    .t-blog-article {
+        display: flex;
+    }
+
     .t-blog-article-content {
         width: 60%;
     }
     
     .t-blog-article-latest {
+        padding: 120px 0 0 60px;
         width: 40%;
     }
 }
