@@ -1,24 +1,33 @@
 // Blog article
 .t-blog-article {
     display: block;
+    padding: 0 0 30px;
 }
 
 .t-blog-article-content,
-.t-blog-article-latest {
+.t-blog-article-latest,
+.t-blog-article-right {
     width: 100%;
 }
 
 @media screen and (min-width:768px) {
     .t-blog-article {
         display: flex;
+        padding: 0 0 120px;
     }
 
     .t-blog-article-content {
+        padding: 0 120px 0 0;
         width: 60%;
     }
     
+    .t-blog-article-right {
+        padding: 120px 0 0;
+        width: 40%;
+    }
+
     .t-blog-article-latest {
-        padding: 120px 0 0 60px;
+        padding: 20px 0 0 60px;
         width: 40%;
     }
 }

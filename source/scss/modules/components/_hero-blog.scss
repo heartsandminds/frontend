@@ -50,6 +50,9 @@
 }
 
 @media (min-width: 900px) {
+    .c-hero-blog-wrapper {
+        margin: 0 0 30px;
+    }
     .c-hero-blog {
         padding: 20px;
     }
@@ -58,8 +61,7 @@
         width: 40%;
     }
     .c-hero-blog__image {
-        max-width: 50%;
+        max-width: 40%;
         margin-left: auto;
-        min-width: 475px;
     }
 }
