@@ -1,0 +1,29 @@
+// Blockquote
+blockquote,
+.c-blockquote {
+    margin: 10px 0 30px;
+}
+
+blockquote p,
+.c-blockquote__text {
+    border-left: 4px solid $color-primary;
+    margin: 0 20px;
+    min-height: 100px;
+    padding: 10px 0 10px 40px;
+    position: relative;
+}
+
+blockquote p:before,
+.c-blockquote__text:before {
+    background-color: $color-primary;
+    background-image: url('../images/icons/quotes.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    content: '';
+    height: 40px;
+    left: -23px;
+    position: absolute;
+    top: 20px;
+    width: 40px;
+}

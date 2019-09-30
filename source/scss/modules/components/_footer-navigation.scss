@@ -15,6 +15,7 @@
 
     .c-global-navigation__list-item {
         padding: 2px 20px 2px 5px;
+        width: auto;
     
         &:not(:last-child):after {
             content: '';
